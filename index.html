@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Evan Bay — Game Developer</title>
+  <title>Evan Bay Portfolio</title>
+  <link rel="icon" type="image/png" href="images/icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
   <style>
@@ -11,8 +12,8 @@
       --bg: #0a0a0f;
       --surface: #13131a;
       --border: #2a2a38;
-      --accent: #c8f05a;
-      --accent2: #5af0c8;
+      --accent: #EE6352;
+      --accent2: #FAC05E;
       --text: #e8e8f0;
       --muted: #6a6a88;
     }
@@ -72,7 +73,7 @@
     }
 
     .logo {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Georgia', sans-serif;
       font-weight: 800;
       font-size: 1.1rem;
       color: var(--accent);
@@ -112,7 +113,7 @@
     }
 
     .hero h1 {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Georgia', sans-serif;
       font-weight: 800;
       font-size: clamp(3rem, 8vw, 7rem);
       line-height: 0.95;
@@ -183,7 +184,7 @@
 
     .stat { display: flex; flex-direction: column; }
     .stat-num {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Georgia', sans-serif;
       font-weight: 800;
       font-size: 1.5rem;
       color: var(--accent);
@@ -211,7 +212,7 @@
     }
 
     .section-title {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Georgia', sans-serif;
       font-weight: 800;
       font-size: 2rem;
       letter-spacing: -0.02em;
@@ -263,6 +264,15 @@
       letter-spacing: 0.1em;
     }
 
+    .project-video {
+      width: 100%;
+      aspect-ratio: 16/9;
+      background: var(--border);
+      margin-bottom: 1.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+
     .project-img img {
       width: 100%;
       height: 100%;
@@ -287,7 +297,7 @@
     }
 
     .project-title {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Georgia', sans-serif;
       font-weight: 700;
       font-size: 1.1rem;
       margin-bottom: 0.75rem;
@@ -303,6 +313,7 @@
 
     .project-links {
       display: flex;
+      flex-wrap: wrap;
       gap: 1rem;
     }
 
@@ -330,7 +341,7 @@
     .skill-item {
       background: var(--surface);
       padding: 1.5rem;
-      font-size: 0.8rem;
+      font-size: 0.6rem;
       color: var(--muted);
       transition: all 0.2s;
     }
@@ -338,11 +349,11 @@
     .skill-item:hover { background: #1a1a26; color: var(--text); }
 
     .skill-name {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Georgia', sans-serif;
       font-weight: 700;
       color: var(--text);
       margin-bottom: 0.25rem;
-      font-size: 0.9rem;
+      font-size: 1.0rem;
     }
 
     /* CONTACT */
@@ -357,7 +368,7 @@
     }
 
     .contact-text h2 {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Georgia', sans-serif;
       font-weight: 800;
       font-size: 2rem;
       margin-bottom: 0.5rem;
@@ -403,7 +414,7 @@
 
 <header>
   <nav>
-    <div class="logo">EB//</div>
+    <div class="logo">ETBAY//</div>
     <ul>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#skills">Skills</a></li>
@@ -412,29 +423,29 @@
   </nav>
 
   <div class="hero">
-    <p class="hero-label">// Game Developer & Designer</p>
-    <h1>Evan<span>Bay.</span></h1>
+    <p class="hero-label">// Junior in Computer Science</p>
+    <h1>Evan<span>Bay</span></h1>
     <p class="hero-bio">
-      I build games and interactive experiences. Currently studying [Your Major] at [Your University] and running the Game Dev Club. Looking for a summer internship where I can contribute to something people love playing.
+      Junior CS student at WSU building games and software. I run the Game Dev Club and am currently expanding a game jam entry in a team of 4. Looking for a summer 2026 internship in software engineering or game development.
     </p>
     <div class="hero-actions">
       <a href="#projects" class="btn btn-primary">View Projects</a>
-      <a href="mailto:your@email.com" class="btn btn-outline">Get in Touch</a>
+      <a href="#contact" class="btn btn-outline">Get in Touch</a>
     </div>
   </div>
 
   <div class="hero-footer">
     <div class="stat">
-      <span class="stat-num">12+</span>
+      <span class="stat-num">8+</span>
       <span class="stat-label">Projects</span>
     </div>
     <div class="stat">
-      <span class="stat-num">3yr</span>
-      <span class="stat-label">Experience</span>
+      <span class="stat-num">2</span>
+      <span class="stat-label">Steam Projects</span>
     </div>
     <div class="stat">
       <span class="stat-num">Game Dev Club</span>
-      <span class="stat-label">Co-Lead</span>
+      <span class="stat-label">President</span>
     </div>
   </div>
 </header>
@@ -451,52 +462,132 @@
     <!-- PROJECT CARD — duplicate and fill in for each project -->
     <div class="project-card">
       <div class="project-img">
-        <!-- Replace with: <img src="screenshot.png" alt="Game Name"> -->
-        [ screenshot ]
+        <img src="images/protopunk.png" alt="ProtoPunk Capsule">
       </div>
       <div class="project-tags">
-        <span class="tag">Unity</span>
         <span class="tag">C#</span>
-        <span class="tag">2D Platformer</span>
+        <span class="tag">Unity</span>
+        <span class="tag">Game Design</span>
       </div>
-      <h3 class="project-title">Your Game Title</h3>
+      <h3 class="project-title">ProtoPunk</h3>
+      <p style="font-size: 0.7rem; color: var(--muted); margin-top: -0.5rem; margin-bottom: 0.75rem;">Feb. 2026 - Present</p>
       <p class="project-desc">
-        One or two sentences describing what the game is, what's interesting about it, and your role in making it.
+        A movement platformer FPS built in 10 days with a team of 6 for a game jam. I led development coordination and built several systems including leaderboard and feedback integration using <a href="https://trytalo.com" target="_blank" rel="noopener noreferrer" style="color: var(--accent2); text-decoration: none; border-bottom: 1px solid rgba(90,240,200,0.3);">Talo</a>. Now in active post-jam expansion.
       </p>
       <div class="project-links">
-        <a href="#" class="project-link">Play on itch.io →</a>
-        <a href="#" class="project-link">GitHub →</a>
+        <a href="https://vortexcoregaming.itch.io/protopunk" class="project-link" target="_blank" rel="noopener noreferrer">Play on itch.io →</a>
+        <a href="https://github.com/etbay/ProtoPunk-Game-Jam-Version" class="project-link" target="_blank" rel="noopener noreferrer">GitHub →</a>
+        <a href="https://store.steampowered.com/app/4445170/ProtoPunk/" class="project-link" target="_blank" rel="noopener noreferrer">Steam Page →</a>
       </div>
     </div>
 
     <div class="project-card">
-      <div class="project-img">[ screenshot ]</div>
-      <div class="project-tags">
-        <span class="tag">Unreal</span>
-        <span class="tag">Blueprints</span>
-        <span class="tag">3D</span>
+      <div class="project-img">
+        <img src="images/shroomwood.png" alt="Shroomwood Capsule">
       </div>
-      <h3 class="project-title">Second Project</h3>
+      <div class="project-tags">
+        <span class="tag">C#</span>
+        <span class="tag">Unity</span>
+      </div>
+      <h3 class="project-title">Shroomwood</h3>
+      <p style="font-size: 0.7rem; color: var(--muted); margin-top: -0.5rem; margin-bottom: 0.75rem;">Nov. 2024 - Aug. 2025</p>
       <p class="project-desc">
-        Description of what makes this project interesting and what you learned or built.
+        A top-down action roguelike built in Unity C# with a 3-4 person team, with a publicly released Steam demo. I owned development of the gameplay UI systems, including inventory, stat display, a dynamic health bar, and proximity-based item descriptions.
       </p>
       <div class="project-links">
-        <a href="#" class="project-link">GitHub →</a>
+        <a href="https://store.steampowered.com/app/3504020/Shroomwood/" class="project-link" target="_blank" rel="noopener noreferrer">Steam Page →</a>
       </div>
     </div>
 
     <div class="project-card">
-      <div class="project-img">[ screenshot ]</div>
-      <div class="project-tags">
-        <span class="tag">Python</span>
-        <span class="tag">Tool</span>
+      <div class="project-img">
+        <img src="images/postscript_interpreter.png" alt="PostScript Interpeter Screenshot">
       </div>
-      <h3 class="project-title">Non-Game Project</h3>
+      <div class="project-tags">
+        <span class="tag">C#</span>
+      </div>
+      <h3 class="project-title">PostScript Interpreter</h3>
+      <p style="font-size: 0.7rem; color: var(--muted); margin-top: -0.5rem; margin-bottom: 0.75rem;">Apr. 2025</p>
       <p class="project-desc">
-        A script, tool, or other coding project that shows range beyond game dev.
+        A PostScript language interpreter built in C# implementing a subset of the stack-based language, including arithmetic, string operations, dictionary and stack manipulation, and switchable dynamic and lexical scoping. 
       </p>
       <div class="project-links">
-        <a href="#" class="project-link">GitHub →</a>
+        <a href="https://github.com/etbay/PostScript-Interpreter" class="project-link" target="_blank" rel="noopener noreferrer">GitHub →</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-img">
+        <img src="images/axis.png" alt="AXIS Screenshot">
+      </div>
+      <div class="project-tags">
+        <span class="tag">C#</span>
+        <span class="tag">Godot</span>
+      </div>
+      <h3 class="project-title">Axis</h3>
+      <p style="font-size: 0.7rem; color: var(--muted); margin-top: -0.5rem; margin-bottom: 0.75rem;">Oct. — Nov. 2025</p>
+      <p class="project-desc">
+        A rhythm game built in Godot with C# over 6 weeks for WSU's Game Dev Club. Players align four outward-facing pads to sync with spawning keys across three lanes. Features a beat-synced key system, normal and held key states, difficulty-based endless mode, and a JSON high score system.
+      </p>
+      <div class="project-links">
+        <a href="https://etbay.itch.io/axis" class="project-link" target="_blank" rel="noopener noreferrer">Play on itch.io →</a>
+        <a href="https://github.com/etbay/Axis" class="project-link" target="_blank" rel="noopener noreferrer">GitHub →</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-img">
+        <img src="images/event_booking_application.png" alt="Event Booking Application Screenshot">
+      </div>
+      <div class="project-tags">
+        <span class="tag">C#</span>
+        <span class="tag">WinForms</span>
+        <span class="tag">NUnit</span>
+      </div>
+      <h3 class="project-title">Event Booking Application</h3>
+      <p style="font-size: 0.7rem; color: var(--muted); margin-top: -0.5rem; margin-bottom: 0.75rem;">Apr. 2025</p>
+      <p class="project-desc">
+        A C# WinForms event booking app with user accounts, searchable listings, and a full booking workflow. Built with OOP, generics, and polymorphism, with NUnit-tested core logic.
+      </p>
+      <div class="project-links">
+        <a href="https://github.com/etbay/Event-Booking-Software" class="project-link" target="_blank" rel="noopener noreferrer">GitHub →</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-img">
+        <img src="images/ducks_in_a_row.png" alt="Ducks in a Row Screenshot">
+      </div>
+      <div class="project-tags">
+        <span class="tag">GDScript</span>
+        <span class="tag">Godot</span>
+      </div>
+      <h3 class="project-title">Ducks in a Row</h3>
+      <p style="font-size: 0.7rem; color: var(--muted); margin-top: -0.5rem; margin-bottom: 0.75rem;">Nov. 2025</p>
+      <p class="project-desc">
+        A physics-driven puzzle game built in Godot with GDScript in 12 hours for the University of Idaho Vandal Game Jam, where it won 1st place overall. Features a linked duckling chain where each duck maintains a fixed distance to the next and a dynamic main menu that populates based on rescued ducks across completed levels.
+      </p>
+      <div class="project-links">
+        <a href="https://etbay.itch.io/ducks-in-a-row" class="project-link" target="_blank" rel="noopener noreferrer">Play on itch.io →</a>
+        <a href="https://github.com/etbay/Ducks-in-a-Row" class="project-link" target="_blank" rel="noopener noreferrer">GitHub →</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-img">
+        <img src="images/ducks_in_a_row.png" alt="Ducks in a Row Screenshot">
+      </div>
+      <div class="project-tags">
+        <span class="tag">GDScript</span>
+        <span class="tag">Godot</span>
+      </div>
+      <h3 class="project-title">In the Maker's Image</h3>
+      <p style="font-size: 0.7rem; color: var(--muted); margin-top: -0.5rem; margin-bottom: 0.75rem;">Nov. 2024</p>
+      <p class="project-desc">
+        A souls-like 2D platformer built in Godot with GDScript in 48 hours with a team of 4 for the 2024 Crimson Game Jam, winning 2nd place overall. I built the player controller using a finite state machine handling dash, jab, air attack, and uppercut states, and created the base enemy AI used across all enemy types.
+      <div class="project-links">
+        <a href="https://etbay.itch.io/in-the-makers-image" class="project-link" target="_blank" rel="noopener noreferrer">Play on itch.io →</a>
+        <a href="https://github.com/etbay/In-The-Makers_image" class="project-link" target="_blank" rel="noopener noreferrer">GitHub →</a>
       </div>
     </div>
 
@@ -511,12 +602,16 @@
   </div>
 
   <div class="skills-grid">
-    <div class="skill-item"><div class="skill-name">Unity</div>2D & 3D, C#</div>
-    <div class="skill-item"><div class="skill-name">Unreal Engine</div>Blueprints, GAS</div>
-    <div class="skill-item"><div class="skill-name">C / C++</div>Systems & gameplay</div>
-    <div class="skill-item"><div class="skill-name">Python</div>Tools & scripting</div>
-    <div class="skill-item"><div class="skill-name">Git</div>Version control</div>
-    <div class="skill-item"><div class="skill-name">Game Design</div>Mechanics, balancing</div>
+    <div class="skill-item"><div class="skill-name">C#</div></div>
+    <div class="skill-item"><div class="skill-name">C / C++</div></div>
+    <div class="skill-item"><div class="skill-name">Unity</div></div>
+    <div class="skill-item"><div class="skill-name">Python</div></div>
+    <div class="skill-item"><div class="skill-name">SQL</div></div>
+    <div class="skill-item"><div class="skill-name">Godot</div></div>
+    <div class="skill-item"><div class="skill-name">GDScript</div></div>
+    <div class="skill-item"><div class="skill-name">Git</div></div>
+    <div class="skill-item"><div class="skill-name">WinForms</div></div>
+    <div class="skill-item"><div class="skill-name">NUnit</div></div>
     <!-- Add or remove as needed -->
   </div>
 </section>
@@ -530,13 +625,13 @@
 
   <div class="contact-block">
     <div class="contact-text">
-      <h2>Let's work together.</h2>
-      <p>Open to internships and collaborative projects.</p>
+      <h2>Like what you see?</h2>
+      <p>Contact me! I'm currently looking for a summer 2026 internship in software engineering or game dev.</p>
     </div>
     <div class="contact-links">
-      <a href="mailto:your@email.com" class="btn btn-primary">Email Me</a>
-      <a href="https://github.com/yourusername" class="btn btn-outline">GitHub</a>
-      <a href="https://linkedin.com/in/yourusername" class="btn btn-outline">LinkedIn</a>
+      <a href="mailto:etbay10@gmail.com" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Email Me</a>
+      <a href="https://github.com/etbay" class="btn btn-outline" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://linkedin.com/in/etbay" class="btn btn-outline" target="_blank" rel="noopener noreferrer">LinkedIn</a>
     </div>
   </div>
 </section>
