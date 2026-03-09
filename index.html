@@ -330,30 +330,46 @@
     .project-link:hover { border-color: var(--accent); }
 
     /* SKILLS */
-    .skills-grid {
+    .skills-groups {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      gap: 1px;
-      background: var(--border);
-      border: 1px solid var(--border);
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5rem;
     }
 
-    .skill-item {
+    .skill-group {
+      border: 1px solid var(--border);
       background: var(--surface);
-      padding: 1.5rem;
-      font-size: 0.6rem;
-      color: var(--muted);
+      padding: 1.75rem;
+    }
+
+    .skill-group-label {
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1.25rem;
+    }
+
+    .skill-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .skill-chip {
+      font-family: 'Georgia', sans-serif;
+      font-weight: 700;
+      font-size: 0.85rem;
+      color: var(--text);
+      background: var(--bg);
+      border: 1px solid var(--border);
+      padding: 0.4rem 0.85rem;
       transition: all 0.2s;
     }
 
-    .skill-item:hover { background: #1a1a26; color: var(--text); }
-
-    .skill-name {
-      font-family: 'Georgia', sans-serif;
-      font-weight: 700;
-      color: var(--text);
-      margin-bottom: 0.25rem;
-      font-size: 1.0rem;
+    .skill-chip:hover {
+      border-color: var(--accent);
+      color: var(--accent);
     }
 
     /* CONTACT */
@@ -442,6 +458,10 @@
     <div class="stat">
       <span class="stat-num">2</span>
       <span class="stat-label">Steam Projects</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num">4</span>
+      <span class="stat-label">Jams Submitted</span>
     </div>
     <div class="stat">
       <span class="stat-num">President</span>
@@ -600,18 +620,32 @@
     <h2 class="section-title">Skills</h2>
   </div>
 
-  <div class="skills-grid">
-    <div class="skill-item"><div class="skill-name">C#</div></div>
-    <div class="skill-item"><div class="skill-name">C / C++</div></div>
-    <div class="skill-item"><div class="skill-name">Unity</div></div>
-    <div class="skill-item"><div class="skill-name">Python</div></div>
-    <div class="skill-item"><div class="skill-name">SQL</div></div>
-    <div class="skill-item"><div class="skill-name">Godot</div></div>
-    <div class="skill-item"><div class="skill-name">GDScript</div></div>
-    <div class="skill-item"><div class="skill-name">Git</div></div>
-    <div class="skill-item"><div class="skill-name">WinForms</div></div>
-    <div class="skill-item"><div class="skill-name">NUnit</div></div>
-    <!-- Add or remove as needed -->
+  <div class="skills-groups">
+    <div class="skill-group">
+      <div class="skill-group-label">// Languages</div>
+      <div class="skill-chips">
+        <span class="skill-chip">C#</span>
+        <span class="skill-chip">C / C++</span>
+        <span class="skill-chip">Python</span>
+        <span class="skill-chip">GDScript</span>
+        <span class="skill-chip">SQL</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <div class="skill-group-label">// Engines</div>
+      <div class="skill-chips">
+        <span class="skill-chip">Unity</span>
+        <span class="skill-chip">Godot</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <div class="skill-group-label">// Tools & Frameworks</div>
+      <div class="skill-chips">
+        <span class="skill-chip">Git</span>
+        <span class="skill-chip">WinForms</span>
+        <span class="skill-chip">NUnit</span>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -637,8 +671,4 @@
 
 <footer>
   <span>Evan Bay // Software Engineer & Game Developer</span>
-  <span>Built with HTML & GitHub Pages</span>
-</footer>
-
-</body>
-</html>
+  <span>Built with HTML & GitHub 
